@@ -3,7 +3,7 @@ inherit cross
 
 NAME="mingw64-i686-enchant"
 VERSION=1.6.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Spell checking library for Win32 toolchain"
 DESCRIPTION="The project aims to provide an efficient extensible abstraction
@@ -16,6 +16,7 @@ SRC_DIR="enchant-${VERSION}"
 CYGCONF_ARGS="
 	--disable-aspell
 	--disable-hspell
+	--disable-ispell
 	--enable-myspell --without-system-myspell
 	--disable-uspell
 	--disable-zemberek
